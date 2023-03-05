@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: turquoise;
+    user-select: none;
+}
+
+h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.metronome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid purple;
+    border-radius: 20%;
+    padding: 5%;
+    width: 300px;
+    height: 280px;
+}
+
+.bpm-display {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.captions {
+    text-align: center;
+}
+
+.bpm-display .tempo {
+    font-size: 4rem;
+
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+            appearance: none;
+    background: white;
+    width: 80%;
+
+}
+
+
+
+input[type=range]:focus {
+    outline: none;
+    width: 70%;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+            appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: turquoise;
+    cursor: pointer;
+    margin-top: -9px;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        background: black;
+        
+        }
+
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 1px;
+            background: black;
+        }    
+
+input[type=range]::-moz-range-thumb {
+-webkit-appearance: none;
+        appearance: none;
+width: 20px;
+width: 20px;
+border-radius: 50%;
+background: purple;
+cursor: pointer;
+
+}
+
+.adjustments {
+    display: flex;
+    justify-content: center;
+
+}
+
+.adjustments .adjust-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 34px;
+    border: 1px solid solid;
+    border-radius: 50%;
+    text-align: center; 
+    color: purple;
+    cursor: pointer;
+    
+}
+
+.adjustments .adjust-btn:hover{
+    background: turquoise;
+    color: whitesmoke;
+}
+
+.adjustments .increase {
+    line-height: 25px;
+}
+
+.adjustments .decrease {
+    line-height: 25px;
+}
+
+.startStop {
+    text-align: center;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: purple;
+    color: whitesmoke;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+.startStop:hover{
+    background: turquoise;
+    color: whitesmoke;
+}
+
+.measures {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.5em;
+}
+
+ .add-steppers {
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background: turquoise;
+    color: whitesmoke;
+    border-radius: 50%;
+    line-height: 20px;
+}
+.subtract-steppers {
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background: turquoise;
+    color: whitesmoke;
+    border-radius: 50%;
+    line-height: 20px;
+}
+
+.add-steppers:hover {
+    background: purple;
+    
+}
+
+.subtract-steppers:hover {
+    background: purple;
+    
+}
